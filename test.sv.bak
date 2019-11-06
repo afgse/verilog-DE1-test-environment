@@ -1,0 +1,49 @@
+module test
+(
+	input logic clk,
+	input logic condition
+);	
+
+logic reg1;
+logic reg2;
+
+
+always_ff @(posedge clk) begin
+
+	if (condition) begin
+	
+		reg1 <= 1'b1;
+		reg2 <= 1'b1;
+	end
+	else begin
+
+		reg1 <= 1'b0;
+		reg2 <= 1'b0;
+	end
+end
+
+endmodule
+
+module tb_test();
+
+logic clk;
+logic condition;
+
+
+test dut(.*);
+
+initial begin
+	clk = 1'b0;
+	forever #1 clk = ~clk;
+end
+
+initial begin
+
+	#1;
+		condition = 1'b0;
+	#2;
+		condition = 1'b1;
+	
+end
+
+endmodule

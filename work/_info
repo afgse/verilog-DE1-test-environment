@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/jason/Computer-Engineering/lab-4-listening-skills-jasonfakidis/task2
+vmy_mod
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1572980018
+!i10b 1
+!s100 h_MPo[IPPCiak`;EOz2zl0
+Ik5YEjV^mC>UJ]ldoZM?LD3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 test2d00_sv_unit
+S1
+Z2 dC:/Users/jason/Computer-Engineering/lab-0-test-environment
+w1572980012
+8C:/Users/jason/Computer-Engineering/lab-0-test-environment/test-00.sv
+FC:/Users/jason/Computer-Engineering/lab-0-test-environment/test-00.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1572980018.000000
+!s107 C:/Users/jason/Computer-Engineering/lab-0-test-environment/test-00.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/jason/Computer-Engineering/lab-0-test-environment/test-00.sv|
+!i113 1
+Z4 o-work work -sv
+Z5 tCvgOpt 0
+vtb_test
+R0
+Z6 !s110 1572979984
+!i10b 1
+!s100 R5][^1>H^JRzY22DO2LL`2
+I3Kd@YS^KZ8nbgCBB4<3_M2
+R1
+!s105 tb_test_sv_unit
+S1
+R2
+w1572972249
+8C:/Users/jason/Computer-Engineering/lab-0-test-environment/tb_test.sv
+FC:/Users/jason/Computer-Engineering/lab-0-test-environment/tb_test.sv
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1572979984.000000
+!s107 C:/Users/jason/Computer-Engineering/lab-0-test-environment/tb_test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/jason/Computer-Engineering/lab-0-test-environment/tb_test.sv|
+!i113 1
+R4
+R5
+vtest
+R0
+R6
+!i10b 1
+!s100 2eMg`H6k0?k;BS`nLPRIR2
+I>FSD@0Y6APaRmf0ZDczXP0
+R1
+!s105 test_sv_unit
+S1
+R2
+w1572972208
+8C:/Users/jason/Computer-Engineering/lab-0-test-environment/test.sv
+FC:/Users/jason/Computer-Engineering/lab-0-test-environment/test.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/jason/Computer-Engineering/lab-0-test-environment/test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/jason/Computer-Engineering/lab-0-test-environment/test.sv|
+!i113 1
+R4
+R5

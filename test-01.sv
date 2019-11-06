@@ -1,0 +1,68 @@
+module test
+(
+    input logic CLOCK_50, 
+    input logic [3:0] KEY, 
+    input logic [9:0] SW,
+                    
+    output logic [6:0] HEX0, 
+    output logic [6:0] HEX1, 
+    output logic [6:0] HEX2,
+    output logic [6:0] HEX3, 
+    output logic [6:0] HEX4, 
+    output logic [6:0] HEX5,
+    output logic [9:0] LEDR
+);
+
+
+
+logic [6:0] hex_0; 
+logic [6:0] hex_1; 
+logic [6:0] hex_2;
+
+assign LEDR = 10'b11_0000_1111;
+
+assign HEX0 = hex_0;
+assign HEX1 = hex_1;
+assign HEX2 = hex_2;
+assign HEX3 = {7{1'b1}};
+assign HEX4 = {7{1'b1}};
+assign HEX5 = {7{1'b1}}; 
+
+ 
+always_comb begin
+    case(SW[2:0])
+        3'b000: hex_0 = 7'b110_0000;
+        3'b001: hex_0 = 7'b111_1001;
+        3'b010: hex_0 = 7'b010_0100;
+        3'b011: hex_0 = 7'b011_0000;
+        3'b100: hex_0 = 7'b001_1001;
+        3'b101: hex_0 = 7'b001_0010;
+        3'b110: hex_0 = 7'b000_0010;
+        3'b111: hex_0 = 7'b111_1000;
+       default: hex_0 = 7'b111_1111;
+    endcase
+    case(SW[5:3])
+        3'b000: hex_1 = 7'b110_0000;
+        3'b001: hex_1 = 7'b111_1001;
+        3'b010: hex_1 = 7'b010_0100;
+        3'b011: hex_1 = 7'b011_0000;
+        3'b100: hex_1 = 7'b001_1001;
+        3'b101: hex_1 = 7'b001_0010;
+        3'b110: hex_1 = 7'b000_0010;
+        3'b111: hex_1 = 7'b111_1000;
+       default: hex_1 = 7'b111_1111;    
+       endcase
+    case(SW[8:6])
+        3'b000: hex_2 = 7'b110_0000;
+        3'b001: hex_2 = 7'b111_1001;
+        3'b010: hex_2 = 7'b010_0100;
+        3'b011: hex_2 = 7'b011_0000;
+        3'b100: hex_2 = 7'b001_1001;
+        3'b101: hex_2 = 7'b001_0010;
+        3'b110: hex_2 = 7'b000_0010;
+        3'b111: hex_2 = 7'b111_1000;
+       default: hex_2 = 7'b111_1111;    
+    endcase
+end
+
+endmodule

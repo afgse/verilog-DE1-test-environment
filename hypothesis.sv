@@ -1,0 +1,48 @@
+module hypothesis
+(
+	input logic clk,
+);	
+
+logic condition;
+
+logic reg1;
+logic reg2;
+
+
+always_ff @(posedge clk) begin
+
+	if (condition) begin
+	
+		reg1 <= 1'b1;
+		reg2 <= 1'b1;
+	end
+	else begin
+
+		reg1 <= 1'b0;
+		reg2 <= 1'b0;
+	end
+end
+
+endmodule
+
+module tb_hypothesis();
+
+logic clk;
+
+logic condition;
+
+initial begin
+	clk = 1'b0;
+	forever #1 clk = ~clk;
+end
+
+initial begin
+
+	#3;
+		condition = 1'b0;
+	#10;
+		condition = 1'b1;
+	
+end
+
+endmodule
